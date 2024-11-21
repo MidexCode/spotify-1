@@ -1,6 +1,7 @@
 import React from "react";
 import { SideBar } from "./Components/SideBar/SideBar";
 import { Player } from "./Components/Player/Player";
+import { Display } from "./Components/Display/Display";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
         <SideBar />
       </div>
       <Player />
+      <Display />
     </div>
   );
 };
