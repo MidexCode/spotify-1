@@ -1,10 +1,12 @@
 import React from "react";
-import { Navbar } from "./Components/Navbar/Navbar";
+import { SideBar } from "./Components/SideBar/SideBar";
 
 const App = () => {
   return (
     <div className="h-screen bg-black">
-      <Navbar />
+      <div className="h-[90%] flex">
+        <SideBar />
+      </div>
     </div>
   );
 };
