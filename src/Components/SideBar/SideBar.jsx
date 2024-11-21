@@ -37,10 +37,27 @@ export const SideBar = () => {
             </button>
           </div>
 
-          <div className="p-4 bg-[#242424] flex  justify-start gap-8 items-center m-2 mt-4 rounded font-semibold pl-4">
-            <h1>Add your Favourite Podcast you listen to</h1>
+          <div className="p-4 bg-[#242424] flex  justify-start gap-[78px] items-center m-2 mt-4 rounded font-semibold pl-4">
+            <h1>
+              Add your Favourite Podcast <br />
+              you listen to
+            </h1>
             <button className="px-4 py-1.5 bg-white  text-[15px] text-black rounded-full ">
               Add Podcast
+            </button>
+          </div>
+
+          <div className="p-4 bg-[#242424] flex  justify-start gap-[94px] items-center m-2 mt-4 rounded font-semibold pl-4">
+            <h1>Add your Favourite Music</h1>
+            <button className="px-4 py-1.5 bg-white  text-[15px] text-black rounded-full ">
+              Add Music
+            </button>
+          </div>
+
+          <div className="p-4 bg-[#242424] flex  justify-start gap-[94px] items-center m-2 mt-4 rounded font-semibold pl-4">
+            <h1>Add your Favourite Artist</h1>
+            <button className="px-4 py-1.5 bg-white  text-[15px] text-black rounded-full ">
+              Add Artist
             </button>
           </div>
         </div>
