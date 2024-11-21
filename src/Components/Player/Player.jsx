@@ -42,42 +42,14 @@ export const Player = () => {
         </div>
 
         <div className="hidden lg:flex items-center opacity-75 gap-4 cursor-pointer">
-          <img
-            src={assets.plays_icon}
-            alt=""
-            className="w-4  hover:bg-green-900"
-          />
-          <img
-            src={assets.mic_icon}
-            alt=""
-            className="w-4  hover:bg-green-900"
-          />
-          <img
-            src={assets.queue_icon}
-            alt=""
-            className="w-4  hover:bg-green-900"
-          />
-          <img
-            src={assets.speaker_icon}
-            alt=""
-            className="w-4  hover:bg-green-900"
-          />
-          <img
-            src={assets.volume_icon}
-            alt=""
-            className="w-4  hover:bg-green-900"
-          />
+          <img src={assets.plays_icon} alt="" className="w-4" />
+          <img src={assets.mic_icon} alt="" className="w-4" />
+          <img src={assets.queue_icon} alt="" className="w-4" />
+          <img src={assets.speaker_icon} alt="" className="w-4" />
+          <img src={assets.volume_icon} alt="" className="w-4" />
           <div className="h-1 bg-slate-50 w-20 rounded-full"></div>
-          <img
-            src={assets.mini_player_icon}
-            alt=""
-            className="w-4  hover:bg-green-900"
-          />
-          <img
-            src={assets.zoom_icon}
-            alt=""
-            className="w-4  hover:bg-green-900"
-          />
+          <img src={assets.mini_player_icon} alt="" className="w-4" />
+          <img src={assets.zoom_icon} alt="" className="w-4" />
         </div>
       </div>
     </>
