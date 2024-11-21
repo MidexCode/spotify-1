@@ -11,7 +11,6 @@ const App = () => {
         <Display />
       </div>
       <Player />
-      <Display />
     </div>
   );
 };
