@@ -30,33 +30,30 @@ export const SideBar = () => {
             </div>
           </div>
 
-          <div className="p-4 bg-[#242424] flex  justify-start gap-24 items-center m-2 mt-4 rounded font-semibold pl-4">
+          <div className="p-4 bg-[#242424]  items-center m-2 mt-4 rounded font-semibold pl-4">
             <h1>Create Your First Playlist</h1>
-            <button className="px-4 py-1.5 bg-white  text-[15px] text-black rounded-full hover:bg-green-700  scale-110 shadow-xl transition duration-300">
+            <button className="px-4 py-1.5 mt-4 bg-white  text-[15px] text-black rounded-full hover:bg-green-700  scale-110 shadow-xl transition duration-300">
               Create Playlist
             </button>
           </div>
 
-          <div className="p-4 bg-[#242424] flex  justify-start gap-[78px] items-center m-2 mt-4 rounded font-semibold pl-4">
-            <h1>
-              Add your Favourite Podcast <br />
-              you listen to
-            </h1>
-            <button className="px-4 py-1.5 bg-white  text-[15px] text-black rounded-full hover:bg-green-700 scale-110 shadow-xl transition duration-300">
+          <div className="p-4 bg-[#242424]   items-center m-2 mt-4 rounded font-semibold pl-4">
+            <h1>Add your Favourite Podcast</h1>
+            <button className="px-4 py-1.5 mt-4 bg-white  text-[15px] text-black rounded-full hover:bg-green-700 scale-110 shadow-xl transition duration-300">
               Add Podcast
             </button>
           </div>
 
-          <div className="p-4 bg-[#242424] flex  justify-start gap-[94px] items-center m-2 mt-4 rounded font-semibold pl-4">
+          <div className="p-4 bg-[#242424]   items-center m-2 mt-4 rounded font-semibold pl-4">
             <h1>Add your Favourite Music</h1>
-            <button className="px-4 py-1.5 bg-white  text-[15px] text-black rounded-full hover:bg-green-700 scale-110 shadow-xl transition duration-300">
+            <button className="px-4 py-1.5 mt-4 bg-white  text-[15px] text-black rounded-full hover:bg-green-700 scale-110 shadow-xl transition duration-300">
               Add Music
             </button>
           </div>
 
-          <div className="p-4 bg-[#242424] flex  justify-start gap-[94px] items-center m-2 mt-4 rounded font-semibold pl-4">
+          <div className="p-4 bg-[#242424]   items-center m-2 mt-4 rounded font-semibold pl-4">
             <h1>Add your Favourite Artist</h1>
-            <button className="px-4 py-1.5 bg-white  text-[15px] text-black rounded-full hover:bg-green-700 scale-110 shadow-xl transition duration-300">
+            <button className="px-4 py-1.5 mt-4 bg-white  text-[15px] text-black rounded-full hover:bg-green-700 scale-110 shadow-xl transition duration-300">
               Add Artist
             </button>
           </div>
