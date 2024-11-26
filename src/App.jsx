@@ -5,12 +5,13 @@ import { Display } from "./Components/Display/Display";
 
 const App = () => {
   return (
-    <div className="h-screen bg-black">
+    <div className="h-screen bg-black text-white">
       <div className="h-[90%] flex">
         <SideBar />
         <Display />
       </div>
       <Player />
+      <audio preload="auto"></audio>
     </div>
   );
 };
