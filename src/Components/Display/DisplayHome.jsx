@@ -3,6 +3,7 @@ import { Navbar } from "../Navbar/Navbar";
 import { albumsData } from "../../assets/assets";
 import { AlbumItem } from "../AlbumItem/AlbumItem";
 import { songsData } from "../../assets/assets";
+import { SongItem } from "../SongItem/SongItem";
 
 export const DisplayHome = () => {
   return (
@@ -32,7 +33,7 @@ export const DisplayHome = () => {
         </h1>
         <div className="flex overflow-auto">
           {songsData.map((item, index) => (
-            <AlbumItem
+            <SongItem
               key={index}
               name={item.name}
               desc={item.desc}

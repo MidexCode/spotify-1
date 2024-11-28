@@ -32,18 +32,32 @@ export const PlayerContextProvider = (props) => {
     setplayStatus(false);
   };
 
-  const contextValue = {
-    audioRef,
-    seekBar,
-    seekBg,
-    track,
-    setTrack,
-    playStatus,
-    setplayStatus,
-    time,
-    setTime,
-    play,
-    pause,
+  const playWithId = async (id) => {
+    setTrack(songsData[id]);
+    await audioRef.current.play();
+    setplayStatus(true);
+  };
+
+  const previous = async () => {
+    if (track.id > 0) {
+      setTrack(songsData[track.id - 1]);
+      await audioRef.current.play();
+      setplayStatus(true);
+    }
+  };
+
+  const next = async () => {
+    if (track.id < songsData.length - 1) {
+      setTrack(songsData[track.id + 1]);
+      await audioRef.current.play();
+      setplayStatus(true);
+    }
+  };
+
+  const seekSong = async (e) => {
+    audioRef.current.currentTime =
+      (e.nativeEvent.offsetX / seekBg.current.offsetWidth) *
+      audioRef.current.duration;
   };
 
   useEffect(() => {
@@ -68,6 +82,24 @@ export const PlayerContextProvider = (props) => {
       };
     }, 1000);
   });
+
+  const contextValue = {
+    audioRef,
+    seekBar,
+    seekBg,
+    track,
+    setTrack,
+    playStatus,
+    setplayStatus,
+    time,
+    setTime,
+    play,
+    pause,
+    playWithId,
+    previous,
+    next,
+    seekSong,
+  };
 
   return (
     <PlayerContext.Provider value={contextValue}>
